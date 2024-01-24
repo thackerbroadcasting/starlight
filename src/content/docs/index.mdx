@@ -1,0 +1,33 @@
+---
+title: Thacker Broadcasting Docs
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: It's, like, where our docs live
+#  image:
+#    file: ../../assets/houston.webp
+  actions:
+    - text: Popular - Legal
+      link: ./legal/overview
+      icon: information
+      variant: primary
+    - text: Homepage
+      link: https://thackerbroadcasting.com
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What lives here?
+
+<CardGrid stagger>
+	<Card title="Legal" icon="document">
+		All documents relating to privacy, terms, and disclaimers live in the `Legal` section.
+	</Card>
+	<Card title="FAQs" icon="open-book">
+		Got some questions? Our FAQs live here too.
+	</Card>
+	<Card title="More to come" icon="pencil">
+		While we're moving assets around, you may see more content appear
+	</Card>
+</CardGrid>
